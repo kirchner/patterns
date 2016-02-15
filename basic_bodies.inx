@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Basic Bodies</_name>
+    <id>pattern.basic_bodies</id>
+    <dependency type="executable" location="extensions">basic_bodies</dependency>
+
+    <param name="neck_circ"      type="float" min="0.1" max="50"  _gui-text="neck circumference (cm):">37.0</param>
+    <param name="front_width"    type="float" min="0.1" max="50"  _gui-text="front width (cm):">32.0</param>
+    <param name="chest_circ"     type="float" min="0.1" max="100" _gui-text="chest circumference (cm):">85.0</param>
+    <param name="waist_circ"     type="float" min="0.1" max="100" _gui-text="waist circumference (cm):">71.0</param>
+    <param name="hip_height"     type="float" min="0.1" max="100" _gui-text="hip height (cm):">23.0</param>
+    <param name="hip_circ"       type="float" min="0.1" max="100" _gui-text="hip circumference (cm):">89.0</param>
+
+    <param name="shoulder_width" type="float" min="0.1" max="50"  _gui-text="shoulder width (cm):">46.0</param>
+    <param name="back_width"     type="float" min="0.1" max="50"  _gui-text="back width (cm):">35.0</param>
+    <param name="back_length"    type="float" min="0.1" max="50"  _gui-text="back length (cm):">44.0</param>
+
+    <param name="upper_arm_circ" type="float" min="0.1" max="50"  _gui-text="upper arm circumference (cm):">26.0</param>
+    <param name="sleeve_length"  type="float" min="0.1" max="100" _gui-text="sleeve length (cm):">60.0</param>
+    <param name="ankle_circ"     type="float" min="0.1" max="50"  _gui-text="ankle circumference (cm):">16.0</param>
+
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Render"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions">basic_bodies</command>
+    </script>
+</inkscape-extension>
